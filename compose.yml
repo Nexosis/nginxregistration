@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    build: 
+      context: .
+    image: nexosis-on.azurecr.io/registration-server:1.0
+    ports:
+      - 8086:8086
+    container_name: registration-server
+    volumes_from:
+    - container:gateway:rw
+    environment:
+      NGINX_CONF:

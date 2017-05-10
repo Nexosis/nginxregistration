@@ -1,0 +1,22 @@
+{
+    "name": "registration-server",
+    "version": "0.1.0",
+    "description": "Simple Restify server to update nginx when servers start",
+    "main": "registrationServer.js",
+    "scripts": {
+        "start": "node registrationServer.js"
+    },
+    "dependencies": {
+        "restify": "^2.0.0",
+        "nginx-conf": "^1.3"
+    },
+    "engines": {
+        "node": "6.9.2"
+    },
+    "keywords": [
+        "node",
+        "restify"
+    ],
+    "author": "Jeff Gabriel, Nexosis",
+    "license": "MIT"
+}
